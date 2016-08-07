@@ -47,18 +47,18 @@ In this section, I grab the data directly from the web. On first run, this may t
 ```{r cache=TRUE}
 set.seed(01886)
 
-#training_url <- "http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
-#testing_url <- "http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"
-#training <- read.csv(url(training_url), na.strings=c("NA","#DIV/0!",""))
-#testing <- read.csv(url(testing_url), na.strings=c("NA","#DIV/0!",""))
+training_url <- "http://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
+testing_url <- "http://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"
+training <- read.csv(url(training_url), na.strings=c("NA","#DIV/0!",""))
+testing <- read.csv(url(testing_url), na.strings=c("NA","#DIV/0!",""))
 
 # Use a local copy so it's a bit faster. If you want to do a direct download, uncomment the above
 # and re-comment the commands below.
 setwd("D:\\Data\\RProjects\\PML")
-trainfile <- 'pml-training.csv'
-testfile <- 'pml-testing.csv'
-training <- read.csv(trainfile, header=TRUE, na.strings=c("NA","#DIV/0!",""))
-testing <- read.csv(testfile, header=TRUE, na.strings=c("NA", "#DIV/0!", ""))
+#trainfile <- 'pml-training.csv'
+#testfile <- 'pml-testing.csv'
+#training <- read.csv(trainfile, header=TRUE, na.strings=c("NA","#DIV/0!",""))
+#testing <- read.csv(testfile, header=TRUE, na.strings=c("NA", "#DIV/0!", ""))
 
 
 ```
